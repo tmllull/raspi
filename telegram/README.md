@@ -98,6 +98,13 @@ And copy this:
       if (msg.text=='ping') then
          send_msg (msg.from.print_name, 'pong', ok_cb, false)
       end
+      if (msg.text=='temp') then
+         local line = io.popen("cat /sys/devices/virtual/thermal/thermal_zone0/temp")
+         local result = line:read("*a")
+         line:close()
+         result = result/1000
+         send_msg (msg.from.print_name, 'My temperature is: '..result..' ºC', ok_cb, false)
+      end
     end
    
     function on_our_id (id)
@@ -118,7 +125,8 @@ And copy this:
     function on_binlog_replay_end ()
     end
 
-With this code, when receive a message with "ping" (without quotes), automatically send a "pong" response. Just works with "ping", and not with "PING" or "Ping".
+With this code, when receive a message with "ping" (without quotes), automatically send a "pong" response. Just works with "ping", and not with "PING" or "Ping". If the message received is "temp", response with the Raspi temperature.
+You can add new rules in *function on_msg_receive (msg)*.
 
 For launch, use:
 
