@@ -41,7 +41,7 @@ When you're loged in again, just try to send an email:
 
 If you receive the follow error when you try to send an email...
 
-        mail: cannot send message: Process exited with a non-zero status
+    mail: cannot send message: Process exited with a non-zero status
 
 You need to change your app settings from yout [Google account] (https://www.google.com/settings/security/lesssecureapps), and activate acces for less secure apps.
 
