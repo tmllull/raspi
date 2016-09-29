@@ -20,8 +20,8 @@ Create a new file named pushLogout.sh and copy the same code changing the MSG fo
 
 Copy files to yout scripts folder (or where you want) and change permissions on it to allow execution:
 
-	 sudo cp pushLogin.sh /home/pi/scripts
-	 sudo chmod 755 /home/pi/scripts/pushLogin.sh
+    sudo cp pushLogin.sh /home/pi/scripts
+    sudo chmod 755 /home/pi/scripts/pushLogin.sh
     sudo chmod 755 /home/pi/scripts/pushLogout.sh
   
 Create a new file login_script.sh:
