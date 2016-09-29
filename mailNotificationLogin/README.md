@@ -63,7 +63,7 @@ Edit /etc/pam.d/sshd and add a call to the script like follow. **Take care to ad
 		session [success=ok ignore=ignore module_unknown=ignore default=bad]        pam_selinux.so close
 
 		# My script
-		session required pam_exec.so seteuid /home/pi/scripts/login_script.sh
+		session required pam_exec.so seteuid /home/pi/scripts/loginScript.sh
 
 		# Set the loginuid process attribute.
 		session    required     pam_loginuid.so
