@@ -23,3 +23,9 @@ Commands:
     ino init -t blink      # initiates a project using "blink" as a template, copy libraries into 
     ino build               # compiles the sketch, creating .hex file (default Arduino uno -m atmega328 for duemilanove)
     ino upload             # uploads the .hex file
+
+### Disable AutoReset
+
+For disable autoreset when open new serial connection, connect a 100uf from GND to Reset pins.
+
+link: http://playground.arduino.cc/Main/DisablingAutoResetOnSerialConnection
