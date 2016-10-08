@@ -24,6 +24,13 @@ Commands:
     ino build               # compiles the sketch, creating .hex file (default Arduino uno -m atmega328 for duemilanove)
     ino upload             # uploads the .hex file
 
+### Links python libs...
+
+http://rdiaz.es/blog/comunicacion-entre-raspberry-pi-y-arduino-por-usb/?lang=en
+
+    sudo apt-get install python-dev&&python-setuptools
+    sudo apt-get install python-serial
+
 ### Disable AutoReset
 
 For disable autoreset when open new serial connection, connect a 100uf from GND to Reset pins.
