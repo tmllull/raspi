@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="YOURKEY"
+API="YOURTOKEN"
 
 #Using PAM
 MSG="Login from user $PAM_USER"
