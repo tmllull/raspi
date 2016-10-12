@@ -68,7 +68,7 @@ And restart Apache
 
 If you want to acces to your OwnCloud from other devices that not are in the same local net, you need to [configure no-ip](https://github.com/tmllull/raspi/tree/master/no-ip)
 
-Then, just loggin to your OwnCloud from your local address as admin, and change the final address on your browser for this
+Then, just loggin to your OwnCloud from your local IP address as admin, and change the final address on your browser for this
 
     /index.php/settings/admin?trustDomain=yourdomain.com
 
