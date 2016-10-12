@@ -7,7 +7,7 @@ Create a file pushLogin.sh with the following code, changing *YOURTOKEN* for the
 
 	#!/bin/bash
 
-	API="YOURKEY"
+	API="YOURTOKEN"
 
 	#Using PAM
 	MSG="Login from user $PAM_USER"
