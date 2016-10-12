@@ -16,7 +16,7 @@ Edit fstab file
 
 And add this line follow the other similars lines
 
-    /dev/sda1   /media/hdd  ext3    defaults    0   0
+    /dev/sda1   /media/hdd  ext4    defaults    0   0
 
 *Note that the spacing are tabs, and ext3 is the filesystem that your device use
 
