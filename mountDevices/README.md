@@ -18,7 +18,7 @@ And add this line follow the other similars lines
 
     /dev/sda1   /media/hdd  ext4    defaults    0   0
 
-*Note that the spacing are tabs, and ext3 is the filesystem that your device use
+*Note that the spacing are tabs, and ext4 is the filesystem that your device use
 
 Update with
 
