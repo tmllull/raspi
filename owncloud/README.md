@@ -47,7 +47,7 @@ To try it, you can access to your IP address with 9091 port, like this:
 
 http://192.168.1.13:9091
 
-*Change 192.168.1.13 with your address
+*Change 192.168.1.13 with your local IP address
 
 The first time, we need to create a new user and pass for the admin, and change the route for data on the advance settings, typing our route (/media/hdd/owncloud/data).
 
