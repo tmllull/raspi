@@ -1,6 +1,6 @@
 # Configure OwnCloud on your Raspi
 
-To use OwnCloud, is recommended have an external HDD or USB with mínimum 16/32GB and mount this device (follow this steps if you doesn't have a mounted device) and have an Static IP for the Raspi (stepts [here](https://github.com/tmllull/raspi/tree/master/staticIP))
+To use OwnCloud, is recommended have an external HDD or USB with mínimum 16/32GB and mount this device (follow this steps if you doesn't have a mounted device) and have an [Static IP for the Raspi] (https://github.com/tmllull/raspi/tree/master/staticIP)
 
 Once we have our HDD/USB mounted, we need to update and upgrade our Raspi
 
@@ -66,7 +66,7 @@ And restart Apache
 
 ## Access to OwnCloud from any device (not only on local net)
 
-If you want to acces to your OwnCloud from other devices that not are in the same local net, you need to configure no-ip first. Follow [this](https://github.com/tmllull/raspi/tree/master/no-ip) steps.
+If you want to acces to your OwnCloud from other devices that not are in the same local net, you need to [configure no-ip](https://github.com/tmllull/raspi/tree/master/no-ip)
 
 Then, just loggin to your OwnCloud from your local address as admin, and change the final address on your browser for this
 
