@@ -1,4 +1,4 @@
-Connect one time to you'r wifi net if you want to save the password (recomended)
+Connect one time to your wifi net if you want to save the password (recomended)
 
 Copy /etc/network/interfaces to a new file ifacesbk (backup)
 
