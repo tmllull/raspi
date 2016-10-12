@@ -1,6 +1,6 @@
 # Configure OwnCloud on your Raspi
 
-To use OwnCloud, is recommended have an external HDD or USB with mínimum 16/32GB and mount this device. Follow this steps if you doesn't have a mounted device.
+To use OwnCloud, is recommended have an external HDD or USB with mínimum 16/32GB and mount this device (follow this steps if you doesn't have a mounted device) and have an Static IP for the Raspi (stepts here)
 
 Once we have our HDD/USB mounted, we need to update and upgrade our Raspi
 
