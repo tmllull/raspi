@@ -31,8 +31,7 @@ And change permissions to the www folder and your HDD or USB mounted folder
     sudo chown -R www-data:www-data /var/www
     sudo chown -R www-data:www-data /media/hdd
 
-###NOTE
-If when you finish all the steps, you can't acces to the OwnCloud, try to copy the folder owncloud to /var/www/html, and change the permissions to this folder too.
+*NOTE: If when you finish all the steps, you can't acces to the OwnCloud, try to copy the folder owncloud to /var/www/html, and change the permissions to this folder too.
 
 The last steps are create a few folder on our HDD/USB to use with OwnCloud and change owner
 
