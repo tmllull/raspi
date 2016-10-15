@@ -1,7 +1,7 @@
 ## How to use
 This is a simple script for send a notification using Pushbullet or Pushover servcie when someone login into Raspi.
 
-First of all, we need to create an "Access token" from [Pushbullet website](http://www.pushbullet.com), in your account settings, or create a new App from Pushover website.
+First of all, we need to create an "Access token" from [Pushbullet website](http://www.pushbullet.com), in your account settings, or create a new App from [Pushover website] (https://pushover.net/).
 
 ### Pushbullet
 
