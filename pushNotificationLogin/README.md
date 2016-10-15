@@ -34,7 +34,7 @@ Now, copy that file to yout scripts folder (or where you want) and change permis
 
 ### Pushover
 
-Create a file pushoverLogin.sh with the following code, changing *APPTOKEN* AND *USERTOKEN* for the token generated from Pushover. Depending the way you use for execute (explained at the end), you must comment one or other MSG line:
+Create a file pushoverLogin.sh with the following code, changing *APPTOKEN* and *USERTOKEN* for the tokens generated from Pushover. Depending the way you use for execute (explained at the end), you must comment one or other MSG line:
 
 	#!/bin/bash
 
@@ -60,9 +60,10 @@ Now, copy that file to yout scripts folder (or where you want) and change permis
 	sudo cp pushoverLogin.sh /home/pi/scripts
 	sudo chmod 755 /home/pi/scripts/pushoverLogin.sh
 
+### Prepare for launch
 Finally, we've 2 way to execute:
 
-1. Edit /etc/pam.d/sshd and add a call to the script like follow Use the script that you wat (Pushbullet or Pushover). **Take care to add the line just next to "pam_selinux.so close"**:
+1. Edit /etc/pam.d/sshd and add a call to the script like follow. Use the script that you want (Pushbullet or Pushover). **Take care to add the line just next to "pam_selinux.so close"**:
 
 		SOME CODE
 		.............
