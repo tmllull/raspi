@@ -1,6 +1,10 @@
 #!/bin/bash
 
+#USING PAM
 MSG="message=Login from user $PAM_USER"
+
+#USING 
+#MSG="message=Login from user $USER"
 
 if [ "$PAM_TYPE" != "close_session" ]; then
 curl -s \
