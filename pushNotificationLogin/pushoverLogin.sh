@@ -3,7 +3,7 @@
 #USING PAM
 MSG="message=Login from user $PAM_USER"
 
-#USING 
+#USING profile
 #MSG="message=Login from user $USER"
 
 if [ "$PAM_TYPE" != "close_session" ]; then
