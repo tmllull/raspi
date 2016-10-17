@@ -70,7 +70,7 @@ If you want to acces to your OwnCloud from other devices that not are in the sam
 
 Then, just loggin to your OwnCloud from your local IP address as admin, and change the final address on your browser for this
 
-    /index.php/settings/admin?trustDomain=yourdomain.com
+    .../index.php/settings/admin?trustDomain=yourdomain.com
 
 *Change "yourdomain.com" for your domain to access to the Raspi.
 
