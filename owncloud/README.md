@@ -26,7 +26,7 @@ At this point, copy the folder owncloud in /var/www
 
     sudo cp -r owncloud /var/www
 
-And change permissions to the www folder and your HDD or USB mounted folder
+And change owner/group to the www folder and your HDD or USB mounted folder
 
     sudo chown -R www-data:www-data /var/www
     sudo chown -R www-data:www-data /media/hdd
