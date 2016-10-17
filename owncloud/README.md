@@ -43,9 +43,9 @@ Now, restart apache
 
     sudo service apache2 restart
 
-To try it, you can access to your IP address with 9091 port, like this:
+To try it, you can access to your IP address with /owncloud port, like this:
 
-http://192.168.1.13:9091
+http://192.168.1.13/owncloud
 
 *Change 192.168.1.13 with your local IP address
 
