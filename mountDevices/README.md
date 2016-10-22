@@ -1,6 +1,6 @@
 #Format and auto-mount USB or HDD on Raspi
 
-First, we format our HDD or USB with our Raspi. This is recommended because sometimes we can have problems with permissions (using transmission, for example) if we mount a device format with other machine.
+First, we format our HDD or USB with our Raspi. This is recommended because sometimes we can have problems with permissions (using transmission, for example) if we mount a device formated with other machine.
 
 Use fdisk -l to see the devices
 
