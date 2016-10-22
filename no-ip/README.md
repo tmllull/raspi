@@ -14,9 +14,9 @@ Access to the new folder no-ip, and install it
     sudo make
     sudo make install
 
-During the installation, we need to introduce our user and pass for no-ip, and select what domain we want to use. If only have one, take this default. Then, choose an update interval (I use 5 minutes), and choose no (N) for the next question.
+During the installation, introduce our user and pass for no-ip, and select what domain we want to use. If you only have one, it's taked by default. Then, choose an update interval (I use 5 minutes), and choose "NO" (N) for the next question.
 
-For open automatically no-ip when turn on the Raspi, create a new file
+To open automatically no-ip when turn on the Raspi, create a new file
 
     sudo nano /etc/init.d/noip2
 
@@ -39,11 +39,11 @@ Add execution permissions
 
     sudo chmod +x /etc/init.d/noip2
 
-And update this file
+And modify update-rc.d
 
     sudo update-rc.d noip2 defaults
 
-Start no-ip
+Start no-ip with
 
     sudo /usr/local/bin/noip2
 
