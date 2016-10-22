@@ -69,7 +69,7 @@ For access to your transmission list, type the Raspi IP address on your browser 
 
 ## Access from external network
 
-You need to open ports on your browser, redirect it to the Raspi IP and configure no-ip service.
+You need to open ports on your browser, redirect it to the Raspi IP and [configure no-ip service](https://github.com/tmllull/raspi/tree/master/no-ip).
 
 Then just type your domain on browser using the same port 9091
 
