@@ -1,6 +1,6 @@
 # Static IP
 
-First, I recommend to connect one time to your wifi for save the password.
+First, I recommend to connect one time to your wifi for save the password, using desktop version.
 
 Then, edit the file dhcpcd.conf
   
