@@ -1,12 +1,38 @@
-#Automount USB or HDD on Raspi
+#Format and auto-mount USB or HDD on Raspi
 
-Without connect your USB or HDD, use fdisk -l to see the devices
+First, we format our HDD or USB with our Raspi. This is recommended because sometimes we can have problems with permissions (using transmission, for example) if we mount a device format with other machine.
+
+Use fdisk -l to see the devices
 
     sudo fdisk -l
 
-Then, connect USB or HDD and use the same command to find your device. Usually is /dev/sda1, but depends that number of devices connected.
+Usually if you connect only one HDD or USB, apears on /dev/sda1.
 
-Now, make a new folder named usb, hdd, pendrive or what you want
+Now proceed to format:
+
+    sudo fdisk /dev/sda
+
+A new terminal menu apears, but the steps are:
+
+- See the partition table with "p" (normally only have one)
+- Delete this partition with "d"
+- Create new partition with "n"
+
+If ask you for a partition type, select primary (p). Then, just press Enter to leave default options.
+
+Finally, press p for view partition table again to check the new partition.
+
+With "w" save changes and exit.
+
+In this point we have a new partition, but isn't format yet. For this, use:
+
+    sudo mkfs.ext4 /dev/sda1
+
+Select yes (y) for confirm.
+
+Depends the size of the HDD, may take several time.
+
+Now, make a new folder named usb, hdd, pendrive or what you want on /media
 
     sudo mkdir /media/hdd
 
