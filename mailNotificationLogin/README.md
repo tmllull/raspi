@@ -24,7 +24,7 @@ Create a new file loginScript.sh:
     
     exit 0
 
-This script send a Pushbullet notification when someone is login and logout, and an email with some information like where are connected, User, last connections, process... The lines *last* and *ps* are commented for minimize information, but just discomment for recieve all.
+This script send an email with some information like where are connected, User, last connections, process... The lines *last* and *ps* are commented for minimize information, but just discomment for recieve all.
 
 Edit /etc/pam.d/sshd and add a call to the script like follow. **Take care to add the line just next to "pam_selinux.so close"**:
 
