@@ -10,6 +10,7 @@ Extract
 
 Access to the new folder no-ip, and install it
 
+    cd noip-2.1.9-1
     sudo make
     sudo make install
 
