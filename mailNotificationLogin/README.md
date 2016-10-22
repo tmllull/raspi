@@ -1,38 +1,11 @@
 ## How to use
-This is a simple script for send an email and notification using Pushbullet servcie when someone login into Raspi.
-
-First of all, we need to configure a mail client, and we follow [this steps](). 
-
-Then, we need to create an "Access token" from [Pushbullet website](http://www.pushbullet.com), in your account settings.
-
-Create file pushLogin.sh with the following code, changing *YOURTOKEN* for the token generated from Pushbullet.
-
-    #!/bin/bash
-
-    API="YOURTOKEN"
-    MSG="Login from user $PAM_USER"
-    
-    curl -u $API: https://api.pushbullet.com/v2/pushes -d type=note -d title="Raspi Alert" -d body="$MSG"
-
-    exit 0
-
-Create a new file named pushLogout.sh and copy the same code changing the MSG for "Logout..."
-
-Copy files to yout scripts folder (or where you want) and change permissions on it to allow execution:
-
-    sudo cp pushLogin.sh /home/pi/scripts
-    sudo chmod 755 /home/pi/scripts/pushLogin.sh
-    sudo chmod 755 /home/pi/scripts/pushLogout.sh
+This is a simple script for send an email when someone login into Raspi.
   
-Create a new file login_script.sh:
+Create a new file loginScript.sh:
 
     #!/bin/bash
-
-    PUSHBULLETIN="/home/pi/scripts/pushLogin.sh"
-    PUSHBULLETOUT="/home/pi/scripts/pushLogout.sh"
 
     if [ "$PAM_TYPE" != "close_session" ]; then
-        $PUSHBULLETIN >/dev/null 2>/dev/null
         subject="Raspi Login"
         {
                 date
@@ -47,9 +20,9 @@ Create a new file login_script.sh:
                 echo ""
                 echo ""
         } | mail -s "$subject" name@domain.com || exit 1;
-    else
-        $PUSHBULLETOUT 2>/dev/null 1>/dev/null
     fi
+    
+    exit 0
 
 This script send a Pushbullet notification when someone is login and logout, and an email with some information like where are connected, User, last connections, process... The lines *last* and *ps* are commented for minimize information, but just discomment for recieve all.
 
