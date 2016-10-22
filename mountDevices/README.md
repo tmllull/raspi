@@ -1,4 +1,4 @@
-#Mount USB or HDD on Raspi
+#Automount USB or HDD on Raspi
 
 Without connect your USB or HDD, use fdisk -l to see the devices
 
