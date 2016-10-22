@@ -1,10 +1,6 @@
 #!/bin/bash
 
-PUSHBULLETIN="/home/pi/scripts/pushLogin.sh"
-PUSHBULLETOUT="/home/pi/scripts/pushLogout.sh"
-
 if [ "$PAM_TYPE" != "close_session" ]; then
-        $PUSHBULLETIN >/dev/null 2>/dev/null
         subject="Raspi Login"
         {
                 date
@@ -19,6 +15,5 @@ if [ "$PAM_TYPE" != "close_session" ]; then
                 echo ""
                 echo ""
         } | mail -s "$subject" mail@domain.com || exit 1;
-else
-        $PUSHBULLETOUT 2>/dev/null 1>/dev/null
 fi
+exit 0
