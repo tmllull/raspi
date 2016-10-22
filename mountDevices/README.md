@@ -20,7 +20,7 @@ A new terminal menu apears, but the steps are:
 
 If ask you for a partition type, select primary (p). Then, just press Enter to leave default options.
 
-Finally, press p for view partition table again to check the new partition.
+Finally, press "p" for view partition table again to check the new partition.
 
 With "w" save changes and exit.
 
