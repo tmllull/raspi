@@ -1,6 +1,14 @@
 Download JSch (http://sourceforge.net/projects/jsch/files/jsch.jar/0.1.54/jsch-0.1.54.jar/download) and JZlib (https://github.com/ymnk/jzlib/archive/1.1.3.zip)
 
-On your project, add a new dependency and import jsch.jar
+
+Add Internet permissions on manifest:
+
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        ...
+        <uses-permission android:name="android.permission.INTERNET" />
+    </manifest>
+
+Add a new module and import jsch.jar (on your root project, right click --> new module)
 
 Create new package on Java folder for JZlib, and copy inside all .java files from JZlib (on /com folder).
 
