@@ -86,3 +86,18 @@ Use this code for a first and simple connection:
             return baos.toString();
         }
     }
+
+If you have a problem like
+
+    Execution failed for task app:transformClassesWithInstantRunForDebug'.JSR/RET are not supported with computeFrames option
+
+Try to desable Instant Run from Preferences --> Build, Execution, Deployment --> Unchek Instant Run
+sources:
+
+http://eridem.net/android-tip-021-ssh-execute-remote-commands-with-android/
+
+http://stackoverflow.com/questions/15019936/android-import-library
+
+http://stackoverflow.com/questions/14323661/simple-ssh-connect-with-jsch
+
+http://stackoverflow.com/questions/38239607/error-jsr-ret-are-not-supported-with-computeframes-option
