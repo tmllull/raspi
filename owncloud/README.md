@@ -57,7 +57,7 @@ The default settings for files size is limited to 2MB. To edit this, open the co
 
     sudo nano /etc/php5/apache2/php.ini
 
-And change the _post_max_size_ and _upload_max_filesize_. I put 10000M, but you can change for any other value.
+Change the _post_max_size_ and _upload_max_filesize_. I put 10000M, but you can change for any other value.
 
 And restart Apache
 
