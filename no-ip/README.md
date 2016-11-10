@@ -53,3 +53,18 @@ Finally, open the ports you want to use from Internet from your router:
 - 22 for ssh
 - 9091 for transmission
 - etc
+
+# Commands
+
+Show noip2 configuration
+    
+    sudo noip2 -S
+
+Update refresh interval
+
+    sudo noip2 -U time_in_minutes
+
+Kill process
+
+    sudo killall noip2
+
