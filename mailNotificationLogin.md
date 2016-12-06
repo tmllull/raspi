@@ -1,5 +1,5 @@
 ## How to use
-This is a simple script for [send an email](https://github.com/tmllull/raspi/tree/master/configureMail) when someone login into Raspi.
+This is a simple script for [send an email](https://github.com/tmllull/raspi/blob/master/configureMail.md) when someone login into Raspi.
   
 Create a new file loginScript.sh:
 
